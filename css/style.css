@@ -1,0 +1,673 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  border-image-width: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input {
+  font-family: inherit;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  border-radius: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #000;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+header {
+  padding: 25px 0 115px;
+  background: url("../img/offer.jpg") no-repeat bottom center/cover;
+}
+
+.container {
+  max-width: 1130px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.nav-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: 160px;
+}
+
+.nav-header li {
+  margin-bottom: 20px;
+}
+
+.nav-header li:not(:last-of-type) {
+  padding: 0 2px;
+}
+
+.offer .offer-title {
+  position: relative;
+}
+
+.offer .offer-title::after {
+  content: "";
+  position: absolute;
+  bottom: 30%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  display: block;
+  width: 989px;
+  height: 41px;
+  background: #FF0028;
+  z-index: 1;
+}
+
+.offer .offer-title h1 {
+  font-weight: bold;
+  font-size: 144px;
+  line-height: 169px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.offer span {
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 84px;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  color: transparent;
+  -webkit-text-stroke: 2px #fff;
+  margin-bottom: 30px;
+}
+
+.offer .info {
+  max-width: 700px;
+}
+
+.offer .info p:not(:last-of-type) {
+  margin-bottom: 1.5em;
+}
+
+.truth-section {
+  padding: 100px 0;
+}
+
+.truth-section .truth-inner > strong {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 55px;
+  color: #FFFFFF;
+  padding-left: 30px;
+  display: block;
+  margin-bottom: 120px;
+}
+
+.truth-section .truth-inner .title {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.truth-section .truth-inner .title span {
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  z-index: 1;
+  font-family: "Paytone One", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 144px;
+  line-height: 201px;
+  -webkit-text-stroke: 2px #F20000;
+  color: transparent;
+}
+
+.truth-section .truth-inner .title h2 {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 53px;
+  position: relative;
+  z-index: 2;
+  color: #FFFFFF;
+}
+
+.truth-section .truth-inner .colums {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.truth-section .truth-inner .colums .left {
+  max-width: 515px;
+  width: 100%;
+}
+
+.truth-section .truth-inner .colums .left p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  display: block;
+  margin-bottom: 45px;
+}
+
+.truth-section .truth-inner .colums .left strong {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 25px;
+  display: block;
+  margin-bottom: 1.5em;
+  color: #FFFFFF;
+}
+
+.truth-section .truth-inner .colums .left ul {
+  padding-left: 20px;
+}
+
+.truth-section .truth-inner .colums .left li {
+  list-style: disc;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+
+.truth-section .truth-inner .colums .right {
+  max-width: 500px;
+  width: 100%;
+}
+
+.truth-section .truth-inner .colums .right > p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 45px;
+  color: #FFFFFF;
+}
+
+.truth-section .truth-inner .colums .right .info strong {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 25px;
+  display: block;
+  margin-bottom: 1.5em;
+  color: #FFFFFF;
+}
+
+.truth-section .truth-inner .colums .right .info p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+
+.truth-section .truth-links {
+  margin-top: 150px;
+}
+
+.truth-section .truth-links .colums {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.truth-section .truth-links .colums .left {
+  max-width: 500px;
+  width: 100%;
+  position: relative;
+}
+
+.truth-section .truth-links .colums .left::after {
+  content: url("../img/truth-bg.jpg");
+  position: absolute;
+  top: -26%;
+  left: 0;
+  z-index: -1;
+}
+
+.truth-section .truth-links .colums .left > strong {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 25px;
+  display: block;
+  margin-bottom: 1.5em;
+  color: #FFFFFF;
+}
+
+.truth-section .truth-links .colums .left .info-f {
+  margin-bottom: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.truth-section .truth-links .colums .left .info-f strong {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.truth-section .truth-links .colums .left .info-f a {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+
+.truth-section .truth-links .colums .left .info-f p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+  margin: 1.5em 0;
+}
+
+.truth-section .truth-links .colums .left .info-s {
+  margin-bottom: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.truth-section .truth-links .colums .left .info-s strong {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.truth-section .truth-links .colums .left .info-s a {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+
+.truth-section .truth-links .colums .left .info-s p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+  margin-top: 1.5em;
+}
+
+.truth-section .truth-links .colums .left .info-list strong {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 25px;
+  color: #FFFFFF;
+  display: block;
+  margin-bottom: 1.5em;
+}
+
+.truth-section .truth-links .colums .left .info-list ul {
+  padding-left: 20px;
+}
+
+.truth-section .truth-links .colums .left .info-list li {
+  list-style: disc;
+  margin-bottom: 1.5em;
+  overflow-wrap: anywhere;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+
+.truth-section .truth-links .colums .right {
+  max-width: 500px;
+  width: 100%;
+}
+
+.truth-section .truth-links .colums .right .info-list strong {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+  display: block;
+  margin-bottom: 1.5em;
+}
+
+.truth-section .truth-links .colums .right .info-list ul {
+  padding-left: 20px;
+}
+
+.truth-section .truth-links .colums .right .info-list li {
+  list-style: disc;
+  margin-bottom: 1.5em;
+}
+
+.cals-section {
+  padding: 100px 0;
+  background: url("../img/cals-bg.jpg") no-repeat center center/cover;
+}
+
+.cals-section .info-list {
+  border: 3px solid #FF0028;
+  padding: 30px;
+  margin-bottom: 160px;
+}
+
+.cals-section .info-list > strong {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 53px;
+  text-align: center;
+  color: #FFFFFF;
+  display: block;
+  margin-bottom: 34px;
+}
+
+.cals-section .info-list .info-list__item {
+  position: relative;
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.cals-section .info-list .info-list__item .icon {
+  position: absolute;
+  top: 5px;
+  left: -70px;
+}
+
+.cals-section .info-list .info-list__item p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  margin-bottom: 1.5em;
+}
+
+.cals-section .info-list .info-list__item span {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+.cals-section .info-list .info-list__item ul {
+  padding-left: 30px;
+  margin-bottom: 1.5em;
+}
+
+.cals-section .info-list .info-list__item li {
+  list-style: disc;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+.cals-section .info-list .info-list__item li a {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+.cals-section .title {
+  position: relative;
+  max-width: 840px;
+  margin-bottom: 40px;
+}
+
+.cals-section .title span {
+  position: absolute;
+  top: -80px;
+  left: 0;
+  z-index: 1;
+  font-family: "Paytone One", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 144px;
+  -webkit-text-stroke: 2px #F20000;
+  color: transparent;
+}
+
+.cals-section .title h2 {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 53px;
+  position: relative;
+  z-index: 2;
+  color: #FFFFFF;
+}
+
+.cals-section .info {
+  max-width: 580px;
+}
+
+.cals-section .info > p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 1.5em;
+  color: #FFFFFF;
+}
+
+.cals-section .info li {
+  margin-bottom: 1.5em;
+}
+
+.cals-section .info li * {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
